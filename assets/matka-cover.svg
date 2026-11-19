@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="title desc">
+  <title id="title">MATKA — A calmer way to get there</title>
+  <desc id="desc">Deep green background with a spring lime orbital route diagram and subtle coral accent, introducing the inclusive transit journey planner.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="440" gradientUnits="userSpaceOnUse"><stop stop-color="#102D31"/><stop offset="1" stop-color="#194348"/></linearGradient>
+    <linearGradient id="path" x1="641" y1="270" x2="1060" y2="131" gradientUnits="userSpaceOnUse"><stop stop-color="#D7F47B"/><stop offset="1" stop-color="#74BFB0"/></linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="19"/></filter>
+  </defs>
+  <rect width="1200" height="440" rx="26" fill="url(#bg)"/>
+  <g opacity=".17" fill="none" stroke="#A3D9D0" stroke-width="1"><circle cx="901" cy="222" r="176"/><circle cx="901" cy="222" r="137"/><circle cx="901" cy="222" r="95"/><path d="M625 222H1180M901 20V420" stroke-dasharray="5 11"/></g>
+  <path d="M650 322C754 323 751 174 847 174C912 174 935 262 990 262C1021 262 1033 198 1086 151" stroke="#61DDB8" stroke-width="28" stroke-linecap="round" fill="none" opacity=".22" filter="url(#glow)"/>
+  <path d="M650 322C754 323 751 174 847 174C912 174 935 262 990 262C1021 262 1033 198 1086 151" stroke="url(#path)" stroke-width="11" stroke-linecap="round" fill="none"/>
+  <g fill="#102D31" stroke="#D7F47B" stroke-width="6"><circle cx="650" cy="322" r="19"/><circle cx="847" cy="174" r="15"/><circle cx="990" cy="262" r="15"/><circle cx="1086" cy="151" r="19"/></g>
+  <circle cx="1086" cy="151" r="7" fill="#EF8E65"/><circle cx="650" cy="322" r="7" fill="#D7F47B"/>
+  <g font-family="Manrope,Arial,sans-serif" fill="#F4F7F4">
+    <text x="73" y="91" font-size="18" font-weight="700" letter-spacing="4" fill="#C5E4D6">INCLUSIVE MOBILITY  /  UX UI DESIGN</text>
+    <text x="69" y="243" font-size="112" font-weight="800" letter-spacing="-7">MATKA<tspan fill="#D7F47B">.</tspan></text>
+    <text x="76" y="312" font-size="31" font-weight="500" letter-spacing="-.5">A calmer way to get there.</text>
+    <text x="75" y="381" font-size="17" letter-spacing="2" fill="#A9CCC3">SABNAM PARIYAR  ·  DESIGN EXPLORATION 2026</text>
+  </g>
+  <g fill="#92BFB6" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2"><text x="618" y="370">START</text><text x="1040" y="112">ARRIVE</text></g>
+</svg>

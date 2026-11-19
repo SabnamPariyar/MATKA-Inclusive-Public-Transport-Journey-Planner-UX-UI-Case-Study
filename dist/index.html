@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#102d31">
+  <meta name="description" content="MATKA — an inclusive journey-planning UX/UI concept and interactive service-design case study by Sabnam Pariyar.">
+  <title>MATKA — Inclusive Journey Planner · Sabnam Pariyar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#prototype" aria-label="MATKA home">
+        <span class="brand-symbol" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>MATKA<span class="brand-dot">.</span></span>
+      </a>
+      <div class="sidebar-eyebrow">DESIGN PORTFOLIO / 2026</div>
+      <div class="sidebar-divider"></div>
+      <nav class="side-nav" aria-label="Project sections">
+        <button type="button" class="nav-link active" data-view="prototype" aria-current="page">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M7 16l3-4 3 2 4-6"/></svg>
+          <span>Live prototype</span><span class="nav-index">01</span>
+        </button>
+        <button type="button" class="nav-link" data-view="case-study">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+          <span>Case study</span><span class="nav-index">02</span>
+        </button>
+        <button type="button" class="nav-link" data-view="design-system">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2"/></svg>
+          <span>Design system</span><span class="nav-index">03</span>
+        </button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-mini-art" aria-hidden="true"><span class="art-loop one"></span><span class="art-loop two"></span><span class="art-node"></span></div>
+        <p>Less friction.<br>More freedom<br>to move.</p>
+        <div class="sidebar-credit"><span class="credit-dot"></span> CONCEPT BY SABNAM PARIYAR</div>
+      </div>
+    </aside>
+
+    <div class="main-shell">
+      <header class="topbar">
+        <div class="topbar-trail"><span class="mono-label">SERVICE DESIGN / UX UI</span><span class="trail-slash">/</span><span id="topbar-current">Interactive prototype</span></div>
+        <div class="topbar-right"><span class="concept-pill"><span class="concept-dot"></span> INDEPENDENT CONCEPT</span><span class="topbar-date">OULU INSPIRED</span></div>
+      </header>
+
+      <main>
+        <section id="prototype" class="view active-view" aria-labelledby="prototype-heading">
+          <div class="hero">
+            <div class="hero-copy">
+              <div class="hero-overline"><span class="sparkle">✳</span> THE CITY, MADE EASIER</div>
+              <h1 id="prototype-heading">A calmer way<br>to <em>get there.</em></h1>
+              <p>One thoughtful journey planner for different people, different needs, and every kind of day.</p>
+              <div class="hero-actions"><button class="hero-primary" type="button" id="hero-plan">Plan a journey</button><span>Designed for more inclusive mobility</span></div>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+              <div class="orbit outer"></div><div class="orbit middle"></div><div class="orbit inner"></div>
+              <div class="orbit-line"></div>
+              <div class="orbital-card"><span class="tiny-circle"></span><span>YOUR ROUTE<br><strong>YOUR RHYTHM</strong></span></div>
+              <div class="orbit-label top">A</div><div class="orbit-label bottom">B</div>
+              <span class="orbit-asterisk">✳</span>
+            </div>
+            <div class="hero-bottomline"><span>MATKA / MOVE WITH CONFIDENCE</span><span>01—03</span></div>
+          </div>
+
+          <div class="prototype-heading-row">
+            <div><span class="eyebrow">TRY THE EXPERIENCE</span><h2>Where are we going?</h2></div>
+            <div class="demo-caution">Illustrative routes & times · not real-time transit data</div>
+          </div>
+
+          <div class="planner-grid" id="planner">
+            <section class="journey-card panel" aria-labelledby="journey-title">
+              <div class="panel-header"><div><span class="eyebrow">YOUR JOURNEY</span><h3 id="journey-title">Plan your trip</h3></div><span class="panel-badge">STEP 01</span></div>
+              <form id="journey-form">
+                <div class="route-inputs">
+                  <div class="route-dots" aria-hidden="true"><span></span><i></i><span></span></div>
+                  <div class="input-stack">
+                    <label class="field-label" for="from">FROM</label>
+                    <select id="from" name="from"><option>Oulu City Centre</option><option>Railway Station</option><option>Tuira</option><option>University of Oulu</option></select>
+                    <div class="field-divider"></div>
+                    <label class="field-label" for="to">TO</label>
+                    <select id="to" name="to"><option>University of Oulu</option><option>Oulu University Hospital</option><option>Nallikari Beach</option><option>Railway Station</option></select>
+                  </div>
+                  <button class="swap-button" type="button" id="swap-route" aria-label="Swap start and destination" title="Swap places">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v16m0 0-4-4m4 4 4-4M17 21V5m0 0-4 4m4-4 4 4"/></svg>
+                  </button>
+                </div>
+
+                <label class="time-label" for="departure">WHEN WOULD YOU LIKE TO LEAVE?</label>
+                <div class="select-wrap">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                  <select id="departure"><option value="now">Leave now</option><option value="morning">Tomorrow morning · 08:00</option><option value="evening">This evening · 18:00</option></select>
+                </div>
+
+                <label class="accessibility-option" for="accessible">
+                  <span class="access-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="4" r="2"/><circle cx="11" cy="17" r="5"/><path d="M11 8v5h7l2 5M7 9h8"/></svg></span>
+                  <span class="access-text"><strong>Step-free journey</strong><small>Prioritize routes with accessible boarding</small></span>
+                  <span class="switch"><input type="checkbox" id="accessible"><span class="switch-track"></span></span>
+                </label>
+                <button type="submit" class="search-button">Find my route</button>
+              </form>
+              <div class="form-foot"><span class="foot-icon">✦</span> Built around how people actually move.</div>
+            </section>
+
+            <section class="results-card panel" aria-labelledby="results-title">
+              <div class="panel-header results-heading"><div><span class="eyebrow">RECOMMENDED FOR YOU</span><h3 id="results-title">Your best routes</h3></div><span class="result-count" id="result-count">3 OPTIONS</span></div>
+              <div class="result-subtitle" id="result-subtitle">City Centre → University of Oulu</div>
+              <div id="route-results" class="route-results" aria-live="polite"></div>
+              <div class="results-bottom"><span><span class="green-dot"></span> Accessible information on every route</span><span class="version-tag">PROTOTYPE V1.0</span></div>
+            </section>
+          </div>
+
+          <div class="lower-grid">
+            <section class="map-panel panel" aria-labelledby="map-title">
+              <div class="section-panel-title"><div><span class="eyebrow">A CLOSER LOOK</span><h3 id="map-title">Your route, at a glance.</h3></div><span class="map-legend"><i></i> SELECTED JOURNEY</span></div>
+              <div class="map-surface" role="img" aria-label="Stylized conceptual route map showing the selected trip through a fictional street grid">
+                <svg viewBox="0 0 720 288" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                  <g class="map-roads" fill="none" stroke="#d6e1df" stroke-width="9" stroke-linecap="round">
+                    <path d="M-30 77 L750 77"/><path d="M-30 208 L750 208"/><path d="M145 -20 L145 310"/><path d="M360 -20 L360 310"/><path d="M586 -20 L586 310"/><path d="M-20 286 L310 -28"/><path d="M421 308 L735 8"/>
+                  </g>
+                  <g class="map-minor" fill="none" stroke="#e6eded" stroke-width="2.5"><path d="M0 143H720"/><path d="M0 250H720"/><path d="M244 0V288"/><path d="M472 0V288"/></g>
+                  <rect x="176" y="96" width="95" height="75" rx="14" fill="#c9ddd2" opacity=".6"/><rect x="407" y="160" width="110" height="78" rx="20" fill="#dce7dc"/>
+                  <path id="map-route-path" d="M110 219 C160 214 166 120 264 125 S417 181 490 120 S585 110 627 76" fill="none" stroke="#ef8e65" stroke-width="8" stroke-linecap="round"/>
+                  <path id="map-route-dash" d="M110 219 C160 214 166 120 264 125 S417 181 490 120 S585 110 627 76" fill="none" stroke="#fff6e9" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 11"/>
+                  <circle cx="110" cy="219" r="16" fill="#173b40"/><circle cx="110" cy="219" r="5" fill="white"/>
+                  <circle cx="627" cy="76" r="16" fill="#ef8e65"/><circle cx="627" cy="76" r="5" fill="white"/>
+                  <g fill="#567478" font-family="DM Sans,sans-serif" font-size="12" font-weight="700"><text x="45" y="255">START</text><text x="596" y="46">ARRIVE</text><text x="305" y="44" opacity=".5">OULU</text></g>
+                </svg>
+                <div class="map-chip"><span class="small-location">⌖</span> <span id="map-route-label">City Centre → University</span></div>
+              </div>
+              <div class="route-detail"><div><span class="eyebrow">SELECTED ROUTE</span><strong id="detail-title">Route B7 · 18 min</strong><p id="detail-description">Easy boarding, simple transfers, clear guidance.</p></div><button type="button" id="save-route" class="save-button" aria-pressed="false">♡ Save route</button></div>
+              <div class="detail-stops" id="detail-stops"></div>
+            </section>
+
+            <section class="principle-panel panel">
+              <span class="eyebrow">A MORE HUMAN SERVICE</span>
+              <div class="principle-graphic" aria-hidden="true"><div class="wheel wheel-one"></div><div class="wheel wheel-two"></div><span class="wheel-star">✳</span></div>
+              <h3>Different needs.<br><em>One city.</em></h3>
+              <p>Clear language, accessible options, and confident choices—without making anyone work harder.</p>
+              <button type="button" class="text-action" data-view="case-study">Explore the thinking</button>
+            </section>
+          </div>
+          <div class="page-footer"><span>MATKA IS AN INDEPENDENT, FICTIONAL UX CONCEPT. NOT AFFILIATED WITH A TRANSIT OPERATOR.</span><span>DESIGNED BY SABNAM PARIYAR</span></div>
+        </section>
+
+        <section id="case-study" class="view" aria-labelledby="case-title">
+          <div class="inner-page-heading"><span class="eyebrow">02 / SERVICE DESIGN CASE STUDY</span><h1 id="case-title">A journey should<br>work for <em>everyone.</em></h1><p>A speculative design exploration into how transport planning can become calmer, clearer and more inclusive.</p><div class="case-tags"><span>Service design</span><span>UX research planning</span><span>Interaction design</span><span>Accessibility</span></div></div>
+          <div class="case-hero-art"><div class="big-track"></div><span class="track-dot dot-a"></span><span class="track-dot dot-b"></span><div class="case-hero-quote">“The best route isn't always the fastest one.”</div></div>
+          <div class="case-summary-grid"><div><span class="eyebrow">THE CHALLENGE</span><h2>Transport information is often optimized for schedules, not people.</h2></div><p>Journey tools can make travelers compare unfamiliar route codes, transfers and accessibility details all at once. MATKA explores a more supportive decision flow where people can choose based on confidence, clarity and individual needs—not just minutes.</p></div>
+          <div class="case-section"><span class="eyebrow">FRAMING THE EXPERIENCE</span><h2>Three design principles</h2><div class="case-card-grid"><article class="case-card"><span class="card-glyph">◎</span><h3>Clarity first</h3><p>Make the next action unmistakable. Prioritize destination, time and transfers over system terminology.</p></article><article class="case-card"><span class="card-glyph">♧</span><h3>Access by default</h3><p>Surface step-free boarding as part of planning—not as an afterthought or hidden filter.</p></article><article class="case-card"><span class="card-glyph">↝</span><h3>Confidence in motion</h3><p>Explain why a route is recommended and what happens at each stage of a journey.</p></article></div></div>
+          <div class="case-section journey-section"><span class="eyebrow">PROPOSED SERVICE JOURNEY</span><h2>From intention to arrival</h2><div class="journey-steps"><div><span>DISCOVER</span><strong>“I need to get there.”</strong><p>Start with places, not line numbers.</p></div><div><span>DECIDE</span><strong>“Which journey suits me?”</strong><p>Compare clarity, transfers and access.</p></div><div><span>TRAVEL</span><strong>“I know what comes next.”</strong><p>Keep one meaningful step in focus.</p></div><div><span>ARRIVE</span><strong>“That felt manageable.”</strong><p>Complete the journey confidently.</p></div></div></div>
+          <div class="case-section methods-section"><div><span class="eyebrow">RESEARCH & VALIDATION PLAN</span><h2>What we would test next</h2></div><div class="method-list"><div><strong>01. Task-based usability test</strong><p>Can a first-time visitor plan a route in under two minutes without assistance?</p></div><div><strong>02. Accessibility walkthrough</strong><p>Can people identify step-free choices using keyboard and screen reader navigation?</p></div><div><strong>03. Decision confidence interview</strong><p>Do recommendation explanations make the chosen route feel trustworthy?</p></div></div></div>
+          <div class="case-disclaimer"><strong>Concept transparency</strong><p>This is a portfolio prototype. The problem framing and research plan are design hypotheses; they are not presented as findings from completed user studies. Route data is illustrative.</p></div>
+          <button class="bottom-cta" type="button" data-view="prototype">Experience the prototype</button>
+          <div class="page-footer"><span>SPECULATIVE UX/UI EXPLORATION</span><span>DESIGNED BY SABNAM PARIYAR</span></div>
+        </section>
+
+        <section id="design-system" class="view" aria-labelledby="system-title">
+          <div class="inner-page-heading system-heading"><span class="eyebrow">03 / VISUAL LANGUAGE</span><h1 id="system-title">Simple at a glance.<br><em>Thoughtful in detail.</em></h1><p>A small, purposeful design language built for calm decision-making and inclusive movement.</p></div>
+          <div class="system-overview"><span class="system-symbol" aria-hidden="true"><i></i><i></i><i></i></span><div><span class="eyebrow">MATKA DESIGN SYSTEM</span><h2>Move with confidence.</h2><p>Friendly geometry. Quiet surfaces. High-contrast guidance.</p></div><span class="system-version">V 1.0<br>CONCEPT SYSTEM</span></div>
+          <div class="system-section"><div class="section-panel-title"><div><span class="eyebrow">FOUNDATIONS</span><h2>Color palette</h2></div><span class="system-notes">CONTRAST-LED / CALM / DISTINCT</span></div><div class="swatch-grid"><div class="swatch" style="--swatch:#102d31"><div></div><strong>Deep pine</strong><span>#102D31 · Primary</span></div><div class="swatch" style="--swatch:#d7f47b"><div></div><strong>Spring lime</strong><span>#D7F47B · Action</span></div><div class="swatch" style="--swatch:#ef8e65"><div></div><strong>Warm coral</strong><span>#EF8E65 · Route</span></div><div class="swatch" style="--swatch:#f4f7f4"><div></div><strong>Cloud</strong><span>#F4F7F4 · Canvas</span></div><div class="swatch" style="--swatch:#76918e"><div></div><strong>Sage slate</strong><span>#76918E · Supporting</span></div></div></div>
+          <div class="system-section"><span class="eyebrow">FOUNDATIONS</span><h2>Typography & hierarchy</h2><div class="type-showcase"><div class="big-type">A calmer<br><em>way to move.</em></div><div class="type-list"><div><span>DISPLAY / MANROPE EXTRA BOLD</span><strong>Make every step clear.</strong></div><div><span>BODY / DM SANS</span><p>Good information meets people where they are.</p></div><div><span>LABEL / ALL CAPS</span><small>DESTINATION · ARRIVAL · ACCESS</small></div></div></div></div>
+          <div class="system-section"><span class="eyebrow">INTERACTIVE COMPONENTS</span><h2>Buttons, chips & states</h2><div class="component-showcase"><div class="button-showcase"><button type="button" class="search-button" id="system-demo-button">Find my route</button><button type="button" class="secondary-button">Route details</button><button type="button" class="quiet-button">View stops</button></div><div class="chips"><span>Fastest</span><span>Step-free</span><span>One transfer</span><span>Recommended</span></div><p class="system-feedback" id="system-feedback" aria-live="polite">Try the primary button to see the interaction.</p></div></div>
+          <div class="system-section"><span class="eyebrow">APPLICATION PATTERNS</span><h2>One service. Many needs.</h2><div class="pattern-grid"><article><span class="pattern-icon">↗</span><strong>Strong next step</strong><p>The most useful action stays visible and clear.</p></article><article><span class="pattern-icon">◎</span><strong>Accessible preference</strong><p>Travel needs are choices—not buried settings.</p></article><article><span class="pattern-icon">≋</span><strong>Quiet visual hierarchy</strong><p>A limited palette keeps competing information calm.</p></article></div></div>
+          <div class="system-section"><span class="eyebrow">INSPIRATION DIRECTION</span><h2>Visual moodboard</h2><div class="moodboard"><div class="mood-one"><span class="mood-caption">NORDIC / SOFT GEOMETRY</span><div class="mood-shape"></div></div><div class="mood-two"><span class="mood-caption">WAYFINDING / RHYTHM</span><div class="mood-route"><i></i><i></i><i></i></div></div><div class="mood-three"><span class="mood-caption">MOVEMENT / HUMAN SCALE</span><div class="mood-bigletter">m.</div></div></div><p class="mood-note">Original abstract moodboard studies created for this concept, not third-party brand material.</p></div>
+          <button class="bottom-cta" type="button" data-view="prototype">Back to live prototype</button>
+          <div class="page-footer"><span>MATKA / DESIGN SYSTEM V1.0</span><span>DESIGNED BY SABNAM PARIYAR</span></div>
+        </section>
+      </main>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
