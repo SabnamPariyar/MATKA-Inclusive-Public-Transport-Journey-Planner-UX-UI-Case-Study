@@ -8,9 +8,9 @@
 
 **UX/UI DESIGN** · **SERVICE DESIGN** · **INTERACTIVE WEB PROTOTYPE** · **ACCESSIBILITY**
 
-[**▶ Explore interactive prototype**](https://matka-inclusive-transit-sabnam.sandeep-pariyar.chatgpt.site) &nbsp;·&nbsp; [**View project files**](dist/) &nbsp;·&nbsp; [**Explore design system**](#design-system)
+[**▶ LAUNCH INTERACTIVE DEMO**](https://sabnampariyar.github.io/MATKA-Inclusive-Public-Transport-Journey-Planner-UX-UI-Case-Study/) &nbsp;·&nbsp; [**View project files**](dist/) &nbsp;·&nbsp; [**Explore design system**](#design-system)
 
-<sub>The interactive preview is currently hosted privately and may require ChatGPT sign-in. The GitHub Pages workflow is included for public deployment.</sub>
+<sub>Public, browser-based prototype · No login or installation required.</sub>
 
 </div>
 
